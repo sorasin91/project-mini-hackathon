@@ -27,7 +27,7 @@ function HomeSora() {
         {/* Top Product Section */}
         <section>
           <div className="container" id="top-product">
-            <h1 className="text-center mt-5 mb-5">Our top products</h1>
+            <h1 className="text-center mt-5">Our top products</h1>
             <div className="row">
               {/* card 1 */}
               <div className="col-md-4 py-3 py-md-0">
@@ -45,9 +45,10 @@ function HomeSora() {
                       Similique, sit.
                     </p>
                     <a
-                      href="#!"
+                      href="./ProductsRazmanR"
                       className="btn btn-outline-dark my-2 my-sm-0"
                       id="top-product-button"
+                      target="blank"
                     >
                       View more
                     </a>
@@ -70,9 +71,10 @@ function HomeSora() {
                       Id, expedita!
                     </p>
                     <a
-                      href="#!"
+                      href="./ProductsRazmanR"
                       className="btn btn-outline-dark my-2 my-sm-0"
                       id="top-product-button"
+                      target="blank"
                     >
                       View more
                     </a>
@@ -95,9 +97,10 @@ function HomeSora() {
                       Expedita, molestiae.
                     </p>
                     <a
-                      href="#!"
+                      href="./ProductsRazmanR"
                       className="btn btn-outline-dark my-2 my-sm-0"
                       id="top-product-button"
+                      target="blank"
                     >
                       View more
                     </a>
@@ -110,7 +113,7 @@ function HomeSora() {
         {/* Services we offer */}
         <section>
           <div className="container" id="services-offer">
-            <h1 className="text-center mt-5 mb-5">Services we offer</h1>
+            <h1 className="text-center mt-5">Services we offer</h1>
             <div className="row">
               {/* service 1 */}
               <div className="col-md-4 py-3 py-md-0">
@@ -128,9 +131,10 @@ function HomeSora() {
                       Consectetur, voluptates.
                     </p>
                     <a
-                      href="#!"
+                      href="/services_william"
                       className="btn btn-outline-dark my-2 my-sm-0"
                       id="top-product-button"
+                      target="blank"
                     >
                       View more
                     </a>
@@ -153,9 +157,10 @@ function HomeSora() {
                       Consectetur, voluptates.
                     </p>
                     <a
-                      href="#!"
+                      href="/services_william"
                       className="btn btn-outline-dark my-2 my-sm-0"
                       id="top-product-button"
+                      target="blank"
                     >
                       View more
                     </a>
@@ -178,9 +183,10 @@ function HomeSora() {
                       Consectetur, voluptates.
                     </p>
                     <a
-                      href="#!"
+                      href="/services_william"
                       className="btn btn-outline-dark my-2 my-sm-0"
                       id="top-product-button"
+                      target="blank"
                     >
                       View more
                     </a>

@@ -14,7 +14,7 @@ function NavbarSora() {
             <Link to={'/ProductsRazmanR'}>Product</Link>
         </li>
         <li>
-            <Link to={'/service'}>Services</Link>
+            <Link to={'/services_william'}>Services</Link>
         </li>
         <li>
             <Link to={'/contactAlex'}>Contact Us</Link>

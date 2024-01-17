@@ -5,6 +5,7 @@ import NavbarSora from "./NavbarSora";
 import Contact from "./contactAlex";
 import Footer from "./footerAlex";
 import Products from "./ProductsRazmanR";
+import SupportPage from "./services_william";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Route path='/' element ={<HomeSora />}/>
           <Route path='/ProductsRazmanR' element ={<Products/>}/>
           <Route path='/contactAlex' element ={<Contact/>}/>
-  
+          <Route path='/services_william' element ={<SupportPage/>}/>
         </Routes>
         <Footer/>
       </Router>

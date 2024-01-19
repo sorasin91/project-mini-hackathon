@@ -1,4 +1,31 @@
-.banner {
+/* Navbar css */
+  ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  }
+
+  li {
+  float: left;
+  }
+
+  li a {
+  display: block;
+  color: black; 
+  text-align: center;
+  padding: 14px 16px; 
+  text-decoration: none;
+  font-size: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 20px; 
+    padding: 10px; 
+  }
+  }
+
+/* main content */
+  .banner {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,8 +34,6 @@
     display: flex;
     justify-content: center;
   }
-  
-  /* main content */
   
   .intro {
     position: absolute;
@@ -21,44 +46,7 @@
   .intro h1{
     font-weight: bold;
   }
-  
-  ul {
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: black; 
-    text-align: center;
-    padding: 14px 16px; 
-    text-decoration: none;
-    font-size: 20px;
-  
-    @media (max-width: 768px) {
-      font-size: 14px; /* Adjust the font size for smaller screens */
-      padding: 10px; /* Adjust the padding for smaller screens */
-    }
-  }
-  
-  /* Change color on hover */
-  li a:hover {
-    background-color: black;
-    color: white;
-  }
-  
-  /* top products css */
-  .row{
-    margin-top: 100px;
-  }
-  
-  
+
   #shop-now-button{
     width: 150px;
     height: 40px;
@@ -72,8 +60,31 @@
   
   #shop-now-button:hover{
     background-color: black;
+  }  
+  
+/* Change color on hover */
+  li a:hover {
+    background-color: black;
+    color: white;
   }
   
+/* top products css */
+  #top-product{
+  max-width: 100%;
+  }
+
+  .row{
+    margin-top: 50px;
+  }
+
+  #home-card {
+    height: 80vh;
+  }
+
+  #home-card-img{
+    height: 500px;
+  }
+
   #top-product-button{
     text-align: center;
     width: 150px;
@@ -88,6 +99,7 @@
     background-color: black;
   }
   
-  .card {
-    height: 500px;
+/* service css */
+  #services-offer{
+    max-width: 100%;
   }

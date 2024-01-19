@@ -1,5 +1,6 @@
 import React from "react";
 import image from "./img/flat-lay-desk-with-laptop-headphones.jpg";
+import './homeSora.css';
 
 function HomeSora() {
   return (

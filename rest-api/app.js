@@ -17,14 +17,6 @@ const bodyparser = require('body-parser');
 const app = express();
 
 const productRoutes = require('./api/routes/products');
-const ordersRoutes = require('./api/routes/orders');
-// cart 
-// fulfilment  
-// delivery 
-const cartRoutes = require('./api/routes/cart');
-// const fulfilmentRoutes = require('./api/routes/fulfilment');
-// const deliveryRoutes = require('./api/routes/delivery');
-
 
 
 // bodyparser
@@ -32,12 +24,6 @@ app.use(bodyparser.urlencoded({extended: false}));
 app.use(bodyparser.json());
 
 app.use('/products', productRoutes);
-app.use('/orders', ordersRoutes);
-
-app.use('/cart',  cartRoutes   );
-// app.use('/fulfilment', fulfilmentRoutes );
-// app.use('/delivery', deliveryRoutes );
-
 
 // error handling =-=-
     // SHOW ERROR, custom MESSAGE
@@ -66,42 +52,6 @@ app.use((error, req, res, next) => {
     });
 
 });
-
-
-// cmdd  libs  to install ===
-
-//   npm install --save body-parser
-
-
-// open   localhost:3000
-// ERROR MSG NOT FOUND
-
-
-
-// get http   json    , add 5 data
-// app.use((req, res, next) => {
-
-//     // 200 status  === http client response success 
-//     // 404 or 4nn === error from client 
-//     // 500 or 5nn === error from server
-
-
-// // add 5 data in json
-//     res.status(200).json({
-//         message: 'it is working',
-//         // name: 'razm',
-//         type: "people",
-//         id: "42",
-//         attributes: {
-//             name: "RazmanR",
-//             age: 80,
-//             gender: "male"
-
-//         }
-//     });
-//     //      res.send('Hello Jack');
-// });
-
 
 module.exports = app;
 

@@ -82,11 +82,11 @@ router.post('/', (req, res, next) => {
 // by RazmanR, Team3 date 14/1/24
 router.get('/:productid', async (req, res, next) => {
      
+    const id = req.params.productid;
     const msg = " GET handling  /GET/productid ";
     let link = "";
     link = "https://dummyjson.com/products/"+id;
 
-    const id = req.params.productid;
     const product = {
         id: id,
         price: req.body.price,

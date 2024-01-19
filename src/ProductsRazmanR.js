@@ -4,9 +4,8 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import './styles_product.css';
 
-  
+
 let jsonData = {
   "products": [
     {
@@ -64,35 +63,30 @@ let jsonData = {
   ]
 }
 
-//  {/* // to add to navbar  */}
 
+//  {/* // to add to navbar  */}
+// to show Products page
 //  <li class="nav-item">
 //  <a class="nav-link" href="http://localhost:3000/products"> View More BUTTON </a>
 // </li>
 
-// <li class="nav-item">
-//  <a class="nav-link" href="http://localhost:3000/products">Top Products</a>
-// </li>
 
-
-// api REST   
+// REST  api 
 // http://localhost:3001/products/1
 
 
 // <div>App
-
 //     
 //        in App.js
 //       note: call this codes below, where you want to 
 //     VIEW Products in your App or Home page  
-    
+
 //       {
 //         <Products />
 
 //       }
 //      
 //     </div>
-
 
 export default function Products(props) {
   // by RazmanR, Team3 date 14/1/24
@@ -171,26 +165,30 @@ export default function Products(props) {
           Buy our Products! We have One for You</h3>
       </div>
 
-      <div className="card-columns">
-        {
-          listE.map((prod) =>
-          (
-            Product(prod)
-          )
-            // <Product prod={prod}  />
-            //  next version, as separate Component  file
+      <div class="container">
+        <div class="row">
 
-          )
+          <div className="card-columns">
+            <div class="container">
+              <div class="row">
+               
+                {
+                  listE.map((prod) =>
+                  (
+                    Product(prod)
+                  )
+                    // <Product prod={prod}  /> 
+                    //  next version, as separate Component  file
 
-        }
+                  )
+
+                }
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-
-      {/* {Product([props.prod])} */}
-
-
-      {/* {Product(listE)} */}
-
-
 
     </div>
   )
@@ -200,43 +198,47 @@ export default function Products(props) {
 
 function Product(data) {
   return (
-    <div className="card">
+    <>
+                {/* separator   */}
+      <div class="col-md-1 ml-auto h-auto  "> </div>
 
-      <img
-        className="image-top  col-md-5    center "
-        src={data.thumbnail}
-        // src="image/card2.pSng"
-        alt="" />
-      <div className="card-body">
-        <h5 className="card-title text-center"> {data.title} </h5>
-        <p className="text-justify lead">
-          {data.description}
+      <div className="card product col-md-5 ml-auto h-auto ">
+        <img
+          className="image-top center  p-3 "
+          src={data.thumbnail}
+          // src="image/card2.pSng"
+          alt="" />
+        <div className="card-body">
+          <h5 className="card-title text-center"> {data.title} </h5>
+          <p className="text-justify lead">
+            {data.description}
 
-        </p>
-        <br />
+          </p>
+          <br />
 
-        {/*  */}
-        <div id="btn2"> 
+          {/*  */}
+          <div id="btn2">
 
 
-           {/* https://dummyjson.com/products/1 */}
-      
+            {/* https://dummyjson.com/products/1 */}
 
-      {/* get api here  */}
-      <div  hidden="true"> 
-      {data.id}
-        </div>
-        <a href="http://localhost:3001/products/1">  
-          <button className="btn btn-outline-info text-center">
 
-            <b> {"RM " + data.price + ".00"} </b>
-          </button>
-         </a>
+            {/* get api here  */}
+            <div hidden="true">
+              {data.id}
+            </div>
+            <a href="http://localhost:3001/products/1">
+              <button className="btn btn-outline-info text-center">
 
- 
+                <b> {"RM " + data.price + ".00"} </b>
+              </button>
+            </a>
+
+
+          </div>
         </div>
       </div>
-    </div>
-    );
+    </>
+  );
 }
 

@@ -7,14 +7,14 @@ function NavbarSora() {
     <div>
          <nav class="navbar navbar-expand-lg navbar-dark" id="navbar-middle">
             {/* Logo */}
-            <a class="navbar-brand" href="#"><img src='./assets/logo.jpg'/></a>
+            <img src='./assets/logo.jpg' alt='logo'/>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
                     <span><i><img src="./img/icons8-menu-96.png" alt="" /></i></span>
                 </button>
 
             {/* Navbar page link */}
             <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <Link to={'/'}>Home</Link>
                     </li>

@@ -23,6 +23,10 @@ cd rest-api
 npm install 
 node server.js
  ```
+
+test and open in browser port 3001 \
+[http://localhost:3001/products/1](http://localhost:3001/products/1)
+
  
 
 ### `npm test`

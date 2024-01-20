@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import './contactAlex.css';
+import './ContactAlex.css';
 import facebook from '../src/assets/facebook3.jpg';
 import instagram from '../src/assets/instagram4.jpg';
 import whatsapp from '../src/assets/whatsapp.png';

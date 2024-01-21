@@ -15,20 +15,30 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### \rest-api 
-This is internal rest-api for internal components to use.\
-To install and run these commands in your console/terminal: 
+This is internal rest-api for internal components to use. This is express server framework. \
+To install and run these commands in your console/terminal.\
+
+1. Open a new, second terminal.\
+2. Run commands in this order:
  ```
 cd project-mini-hackathon
 cd rest-api  
 npm install 
 node server.js
  ```
+ 
+ example
+ ![Alt text](image.png)
 
-test and open in browser port 3001 \
+
+3. Run, test and open in browser port 3001 \
 [http://localhost:3001/products/1](http://localhost:3001/products/1)
 
- 
+example
+![Alt text](image-1.png)
 
+ 
+ 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\

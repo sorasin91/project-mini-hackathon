@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomeSora from "./HomeSora";
 import NavbarSora from "./NavbarSora";
-import Contact from "./ContactAlex";
-import Footer from "./FooterAlex";
+import Contact from "./contactAlex";
+import Footer from "./footerAlex";
 import Products from "./ProductsRazmanR";
 import SupportPage from "./services_william";
 

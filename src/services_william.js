@@ -13,36 +13,36 @@ class SupportPage extends React.Component {
           <div className="row">
             <div className="col-sm-6">
               <div className="service">
-                <h4><input type="checkbox" />Battery Service</h4>
+                <h4><input type="checkbox" /> Battery Service</h4>
               </div>
             </div>
             <div className="col-sm-6">
               <div className="service">
-                <h4><input type="checkbox" />Cracked Screen(Front Only)</h4>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-sm-6">
-              <div className="service">
-                <h4><input type="checkbox" />Cracked Screen(Back Only)</h4>
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="service">
-                <h4><input type="checkbox" />Camera Damage</h4>
+                <h4><input type="checkbox" /> Cracked Screen(Front Only)</h4>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-sm-6">
               <div className="service">
-                <h4><input type="checkbox" />Water or Liquid Damage</h4>
+                <h4><input type="checkbox" /> Cracked Screen(Back Only)</h4>
               </div>
             </div>
             <div className="col-sm-6">
               <div className="service">
-                <h4><input type="checkbox" />On/Off/Volume Button Damage</h4>
+                <h4><input type="checkbox" /> Camera Damage</h4>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm-6">
+              <div className="service">
+                <h4><input type="checkbox" /> Water or Liquid Damage</h4>
+              </div>
+            </div>
+            <div className="col-sm-6">
+              <div className="service">
+                <h4><input type="checkbox" /> On/Off/Volume Button Damage</h4>
               </div>
             </div>
           </div>
@@ -106,9 +106,9 @@ class SupportPage extends React.Component {
                 <input type="text" className="form-control" id="inputissue" />
               </div>
             </div>
+            <br/>
             <button type="submit" className="btn btn-primary">Submit</button>
           </form>
-          <br />
           <div className="section-divider">
             <section id="contact-details">
               <h4>Contact Details</h4>
@@ -116,9 +116,9 @@ class SupportPage extends React.Component {
               <p>Email: mobilephonesupport@gmail.com</p>
               <p>Phone: +60 456-7890</p>
             </section>
-            <footer>
+            {/* <footer>
               &copy; 2024 Mobile Phone. All rights reserved.
-            </footer>
+            </footer> */}
           </div>
         </div>
       </div>

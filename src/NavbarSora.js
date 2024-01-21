@@ -1,36 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './homeSora.css';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
 
 function NavbarSora() {
   return (
-    <div>
-         <nav className="navbar navbar-expand-lg navbar-dark" id="navbar-middle">
-            {/* Logo */}
-            <Link to={'/'}><img src='./assets/logo.jpg' alt='logo'/></Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span><i><img src="./assets/icons8-menu-96.png" alt="" /></i></span>
-                </button>
-
-            {/* Navbar page link */}
-            <div className="collapse navbar-collapse" id="navbar-menu">
-                <ul className="navbar-nav mr-auto">
-                    <li className="nav-item">
-                        <Link to={'/'}>Home</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to={'/ProductsRazmanR'}>Product</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to={'/services_william'}>Services</Link>
-                    </li>
-                    <li className="nav-item">   
-                        <Link to={'/contactAlex'}>Contact Us</Link>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+    <Navbar expand="lg" className="bg-body-tertiary" id='navbar'>
+      <Container fluid className='navbar'>
+        <Navbar.Brand href="#home"><img src='./assets/logo.jpg' alt='logo'/></Navbar.Brand> 
+        <Navbar.Toggle aria-controls="navbar-menu" />
+          <Navbar.Collapse id="navbar-menu">
+            <Nav className="ml-auto" id="navbar-menu">
+              <Nav.Item>
+                <Nav.Link href="/">Home</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>   
+                <Nav.Link href="/ProductsRazmanR">Product</Nav.Link>
+              </Nav.Item>  
+                <Nav.Link href="/services_william">Services</Nav.Link>
+                <Nav.Link href="/contactAlex">Contact Us</Nav.Link>
+            </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    
   )
 }
 

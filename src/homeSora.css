@@ -1,27 +1,18 @@
 /* Navbar css */
-  ul {
-  list-style-type: none; 
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  }
-
-  li {
-  float: left;
-  }
-
-  li a {
+  #navbar{
   display: block;
   color: black; 
   text-align: center;
   padding: 14px 16px; 
   text-decoration: none;
   font-size: 20px;
+  cursor: pointer;
 
-  @media (max-width: 768px) {
-    font-size: 20px; 
-    padding: 10px; 
   }
+
+  #navbar:hover{
+    color: white;
+    background-color: black;
   }
 
 /* main content */
@@ -40,7 +31,6 @@
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-   
   }
   
   .intro h1{
@@ -62,27 +52,19 @@
     background-color: black;
   }  
   
-/* Change color on hover */
-  li a:hover {
-    background-color: black;
-    color: white;
-  }
-  
-/* top products css */
-  #top-product{
+/* top products and services css */
+  #top-product,#services-offer{
   max-width: 100%;
   }
-
-  .row{
-    margin-top: 50px;
-  }
-
+  
   #home-card {
-    height: 80vh;
+    height: 80vh;  
+
   }
 
   #home-card-img{
     height: 500px;
+
   }
 
   #top-product-button{
@@ -98,8 +80,48 @@
   #top-product-button:hover{
     background-color: black;
   }
+
+  /* Responsive Styles */
+  /* Adjust styles for screens smaller than 768px (e.g., tablets and phones) */
+  @media only screen and (max-width: 768px) {
   
-/* service css */
-  #services-offer{
-    max-width: 100%;
+  /* Navbar adjustments */
+  #navbar {
+    text-align: right; 
   }
+
+  /* Banner adjustments */
+  .banner {
+    height: auto;
+    background-size: 120%;  
+  }
+
+  .intro {
+    position: static; /* Remove absolute positioning */
+    text-align: center; /* Center text */
+    transform: none; /* Remove translation */
+    font-size: 15px;
+  }
+
+  .row{
+    margin-top: 10px;
+  }
+
+  #home-card {
+    height: auto;  
+  }
+
+  #home-card-img{
+    height: auto;
+
+  }
+
+}
+
+/* Responsive Styles for screens up to 430px */
+@media only screen and (max-width: 430px) {
+  /* Navbar adjustments for smaller screens */
+  #navbar {
+    padding: 10px; /* Adjust padding */
+  }
+}
